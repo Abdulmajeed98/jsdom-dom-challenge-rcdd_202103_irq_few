@@ -33,7 +33,7 @@ minus_id.addEventListener("click", function(){
 heart_id.addEventListener("click", function(){
   let like = document.querySelector(".likes")
 
-  if(document.getElementById(`Li${counter}`) == null){
+  if(document.getElementById(`Li${counter}`) === null){
     let li = document.createElement("li");
     li.setAttribute("id", `Li${counter}`)
     li.innerHTML = `${counter} have this many likes:1`
